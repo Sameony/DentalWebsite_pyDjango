@@ -113,7 +113,19 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
-
+'''
+email_host='smtp.gmail.com'
+email_port = 587
+email_host_user = 'probablynotwtf@gmail.com'
+email_host_password = 'potat'
+email_use_tls = True
+email_use_ssl = False
+'''
+EMAIL_HOST= 'localhost'
+EMAIL_PORT = 1025
+EMAIL_HOST_USER= ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
