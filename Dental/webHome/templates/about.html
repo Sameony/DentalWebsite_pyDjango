@@ -64,7 +64,7 @@
           <nav class="classy-navbar justify-content-between" id="dentoNav">
 
             <!-- Logo -->
-            <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+            <a class="nav-brand" href="index.html"><img src="{%static 'website/img/core-img/logo.png' %}" alt=""></a>
 
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
@@ -82,10 +82,10 @@
               <!-- Nav Start -->
               <div class="classynav">
                 <ul id="nav">
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="{% url 'homepg' %}">Home</a></li>
                   <li><a href="#">Pages</a>
                     <ul class="dropdown">
-                      <li><a href="index.html">- Home</a></li>
+                      <li><a href="{% url 'homepg' %}">- Home</a></li>
                       <li><a href="about.html">- About Us</a></li>
                       <li><a href="service.html">- Service</a></li>
                       <li><a href="pricing.html">- Pricing</a></li>
@@ -134,7 +134,7 @@
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/12.jpg);">
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({%static 'website/img/bg-img/12.jpg' %});">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
@@ -166,7 +166,7 @@
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
           <div class="about-us-thumbnail mb-50">
-            <img src="./img/bg-img/15.jpg" alt="">
+            <img src="{%static 'website/img/bg-img/15.jpg' %}" alt="">
           </div>
         </div>
         <!-- About Content -->
@@ -262,7 +262,7 @@
   <!-- Cool Facts Area End -->
 
   <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/7.jpg');">
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/7.jpg' %});">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -272,7 +272,7 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
+                <img src="{%static 'website/img/bg-img/8.jpg' %}" alt="">
               </div>
               <!-- Content -->
               <div class="testimonial-content">
@@ -287,7 +287,7 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
+                <img src="{%static 'website/img/bg-img/8.jpg' %}" alt="">
               </div>
               <!-- Content -->
               <div class="testimonial-content">
@@ -302,7 +302,7 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="./img/bg-img/8.jpg" alt="">
+                <img src="{%static 'website/img/bg-img/8.jpg' %}" alt="">
               </div>
               <!-- Content -->
               <div class="testimonial-content">
@@ -336,7 +336,7 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/9.png" alt="">
+            <img src="{%static 'website/img/bg-img/9.png' %}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
@@ -357,7 +357,7 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/10.png" alt="">
+            <img src="{%static 'website/img/bg-img/10.png' %}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
@@ -378,7 +378,7 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="./img/bg-img/11.png" alt="">
+            <img src="{%static 'website/img/bg-img/11.png' %}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
@@ -401,13 +401,13 @@
   <!-- ***** Dento Dentist Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
-  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/3.jpg);">
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({%static 'website/img/bg-img/3.jpg' %});">
     <div class="container">
       <div class="row">
         <!-- Single Footer Widget -->
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-footer-widget">
-            <a href="./index.html" class="d-block mb-4"><img src="./img/core-img/logo.png" alt=""></a>
+            <a href="./index.html" class="d-block mb-4"><img src="{%static 'website/img/core-img/logo.png' %}" alt=""></a>
             <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
             <div class="footer-contact">
               <p><i class="icon_pin"></i> 28 Jackson Street, Chicago, 7788569 USA</p>
