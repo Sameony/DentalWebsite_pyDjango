@@ -6,7 +6,7 @@ from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -122,19 +122,11 @@ STATICFILES_DIRS = [
 #whitenoise ka reference add kara h
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-'''
-email_host='smtp.gmail.com'
-email_port = 587
-email_host_user = 'probablynotwtf@gmail.com'
-email_host_password = 'potat'
-email_use_tls = True
-email_use_ssl = False
-'''
-EMAIL_HOST= 'localhost'
-EMAIL_PORT = 1025
-EMAIL_HOST_USER= ''
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'probablynotwtf@gmail.com'
 EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
+EMAIL_USE_TLS = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
