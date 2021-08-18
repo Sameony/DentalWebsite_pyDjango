@@ -120,7 +120,7 @@ STATICFILES_DIRS = [
 ]
 
 #whitenoise ka reference add kara h
-STATICFILES_STORAGE = 'whitenoise.storage.CompressManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 '''
 email_host='smtp.gmail.com'
