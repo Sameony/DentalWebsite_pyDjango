@@ -47,3 +47,18 @@ EMAIL_HOST_USER= ''
 EMAIL_HOST_PASSWORD
 
 connecting the dummy server
+
+
+
+
+
+'whitenoise.middleware.WhiteNoiseMiddleware',
+let us use this white noise stuff
+
+
+add reference for whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressManifestStaticFilesStorage'
+
+
+django_heroku.settings(locals())
+call local functions 
